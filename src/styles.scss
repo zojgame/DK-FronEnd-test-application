@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+
+.main-page-content, .detailed-content{
+    background: rgba(206, 195, 209, 0.614);
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 0.5%;
+}
+
+.detailed-content{
+    padding: 1%;
+}
+
+.post{
+    display: block;
+    background: white;
+    width: 70%;
+    height: auto;
+    border-radius: 15px;
+    margin: 0 auto 2% auto;
+    padding: 2%;
+}
+
+.post-image, .post-detailed-image{
+    width: inherit;
+    display: block;
+    margin: 2% auto 0 auto;
+}
+
+.to-detailed-post-btn{
+    padding-top: 5%;
+}
+
+.post-container, .detailed-post-container{
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+.username-post{
+    font-style: italic;
+}
+
+.pagination{    
+    text-align: center;
+}
+
+.add-new-post-btn{
+    position: absolute;
+    left: 10%;
+    top: 15%;
+}
+
+.modal-window{
+    position: absolute;
+    background: rgb(206, 195, 209);
+    border-radius: 15px;
+    min-width: 35vw;
+    padding: 2%;
+    left: calc(50% - 17.5vw - 1%);
+    top: 20%;
+}
+
+.modal-title{
+    text-align: center;
+}
+
+.close-modal-btn{
+    font-size: large;
+    margin-left: 5%;
+}
+
+.modal-window-blur{
+    position: fixed;
+    background: (0, 0, 0, 0.6);    
+    backdrop-filter: blur(3px);
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
